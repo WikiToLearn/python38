@@ -4,10 +4,11 @@ import unittest
 import wtl
 import os
 
-class BotGatewayTest(unittest.TestCase):
+class LoadConfigTests(unittest.TestCase):
 
     def test_config_not_found(self):
-        self.assertEqual(wtl.loadConfig(config_dir=os.getcwd()+"/dirnotfound/"), None)
+        config = wtl.loadConfig(config_dir=os.getcwd()+"/dirnotfound/")
+        self.assertEqual(config, None)
 
     def test_config(self):
         config = wtl.loadConfig(config_prefix="a",config_dir=os.getcwd()+"/configs/")
