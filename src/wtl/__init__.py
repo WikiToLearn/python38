@@ -3,7 +3,7 @@ import os
 import os.path
 import requests
 
-def loadConfig(config_prefix="config", config_dir=None):
+def load_config(config_prefix="config", config_dir=None):
     if config_dir == None:
         config_dir = os.getcwd()
 

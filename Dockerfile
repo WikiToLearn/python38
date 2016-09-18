@@ -7,5 +7,5 @@ ADD ./src/ /tmp/wtl/
 RUN cd /tmp/wtl/ && pip install .
 
 ADD ./tests/ /tmp/tests/
-RUN cd /tmp/tests/ && python loadConfig.py
+RUN cd /tmp/tests/ && python load_config.py
 RUN cd /tmp/tests/ && python send_notify.py
