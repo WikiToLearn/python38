@@ -23,7 +23,7 @@ class SendNotifyTests(unittest.TestCase):
         }
         self.assertRaises(ValueError, wtl.send_notify, {}, "test", config)
 
-    def test_InvalidSchema(self):
+    def test_invalid_schema(self):
         config = {
             'protocol':"test",
             'hostname':"test",
