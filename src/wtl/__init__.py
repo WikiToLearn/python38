@@ -51,7 +51,7 @@ def send_notify(data, notify_type, config):
         'port',
     ]:
         if not isinstance(config[f],int):
-            raise ValueError('{} must be a str'.format(f))
+            raise ValueError('{} must be a int'.format(f))
 
     protocol = config['protocol']
     hostname = config['hostname']
