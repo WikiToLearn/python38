@@ -1,4 +1,4 @@
-FROM python:3.5
+FROM python:3.8
 
 RUN pip install pyyaml==3.12
 RUN pip install requests==2.11.1
